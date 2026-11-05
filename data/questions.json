@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "question": "Trí tuệ nhân tạo (AI) là lĩnh vực tập trung vào mục tiêu nào?",
+    "options": {
+      "A": "Thiết kế và chế tạo mọi loại thiết bị điện tử",
+      "B": "Tạo hệ thống có thể thực hiện những nhiệm vụ thường cần trí tuệ con người",
+      "C": "Chỉ lưu trữ dữ liệu trên Internet",
+      "D": "Thay thế hoàn toàn mọi hoạt động của con người"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Học máy (Machine Learning) là gì?",
+    "options": {
+      "A": "Một phương pháp giúp máy tính học mẫu từ dữ liệu để đưa ra dự đoán hoặc quyết định",
+      "B": "Cách tăng tốc độ gõ bàn phím",
+      "C": "Một ngôn ngữ lập trình duy nhất",
+      "D": "Một thiết bị dùng để kết nối Wi-Fi"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 3,
+    "question": "Dữ liệu huấn luyện được sử dụng chủ yếu để làm gì trong học máy?",
+    "options": {
+      "A": "Trang trí giao diện ứng dụng",
+      "B": "Làm tăng dung lượng pin",
+      "C": "Giúp mô hình tìm ra các mẫu và mối quan hệ cần học",
+      "D": "Thay thế hệ điều hành máy tính"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 4,
+    "question": "Điều nào sau đây là cách sử dụng AI có trách nhiệm?",
+    "options": {
+      "A": "Tin mọi câu trả lời AI mà không kiểm tra",
+      "B": "Dùng AI để tạo thông tin giả về người khác",
+      "C": "Đưa dữ liệu cá nhân nhạy cảm lên mọi công cụ AI",
+      "D": "Kiểm chứng thông tin AI và tôn trọng quyền riêng tư"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 5,
+    "question": "Hiện tượng AI tạo ra thông tin nghe có vẻ hợp lý nhưng không đúng thường được gọi là gì?",
+    "options": {
+      "A": "Ảo giác AI (AI hallucination)",
+      "B": "Nén dữ liệu",
+      "C": "Mã hóa hai lớp",
+      "D": "Sao lưu tự động"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Trong AI tạo sinh (Generative AI), prompt có vai trò gì?",
+    "options": {
+      "A": "Là bộ phận làm mát máy tính",
+      "B": "Là chỉ dẫn hoặc yêu cầu đầu vào để định hướng kết quả AI tạo ra",
+      "C": "Là tên gọi khác của màn hình",
+      "D": "Là mật khẩu truy cập Internet"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 7,
+    "question": "Vì sao cần chú ý đến thiên lệch (bias) trong hệ thống AI?",
+    "options": {
+      "A": "Vì thiên lệch luôn làm AI chạy nhanh hơn",
+      "B": "Vì thiên lệch chỉ ảnh hưởng đến màu sắc giao diện",
+      "C": "Vì thiên lệch có thể dẫn đến kết quả thiếu công bằng hoặc sai lệch",
+      "D": "Vì thiên lệch giúp loại bỏ nhu cầu kiểm tra dữ liệu"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Khi dùng AI để hỗ trợ làm bài học, cách làm phù hợp nhất là gì?",
+    "options": {
+      "A": "Sao chép nguyên văn mọi kết quả AI",
+      "B": "Yêu cầu AI làm thay toàn bộ và không cần đọc lại",
+      "C": "Chỉ chọn câu trả lời dài nhất",
+      "D": "Dùng AI để tham khảo, kiểm chứng với tài liệu đáng tin cậy và tự hoàn thiện bài"
+    },
+    "correctAnswer": "D"
+  }
+]

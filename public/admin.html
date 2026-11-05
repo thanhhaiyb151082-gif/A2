@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c36">
+  <title>Quản trị – AI Challenge</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="/js/admin.js" defer></script>
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">BẢNG ĐIỀU KHIỂN SỰ KIỆN</p>
+        <h1>AI CHALLENGE <span>ADMIN</span></h1>
+      </div>
+      <a class="text-link" href="/" target="_blank" rel="noopener">Mở trang người chơi ↗</a>
+    </header>
+
+    <section id="loginPanel" class="panel login-panel">
+      <h2>Đăng nhập quản trị</h2>
+      <p class="muted">Nhập mật khẩu ADMIN_PASSWORD đã cấu hình trên máy chủ (Render &gt; Environment).</p>
+      <form id="adminLoginForm" autocomplete="off">
+        <label for="adminPassword">Mật khẩu quản trị</label>
+        <input id="adminPassword" name="adminPassword" type="password" autocomplete="current-password"
+               autocapitalize="off" autocorrect="off" spellcheck="false" required>
+        <label class="inline-check"><input id="showPassword" type="checkbox"> Hiện mật khẩu</label>
+        <button id="loginButton" class="button primary full" type="submit">Đăng nhập</button>
+      </form>
+      <p id="loginMessage" class="message" role="status"></p>
+    </section>
+
+    <div id="dashboard" class="hidden">
+      <section class="stats-grid">
+        <article class="stat-card"><span>Trạng thái</span><strong id="gameStatus">Chờ</strong></article>
+        <article class="stat-card"><span>Vòng hiện tại</span><strong id="roundNumber">0 / 8</strong></article>
+        <article class="stat-card"><span>Đang thi đấu</span><strong id="activeCount">0</strong></article>
+        <article class="stat-card"><span>Đang theo dõi</span><strong id="spectatorCount">0</strong></article>
+        <article class="stat-card"><span>Đã trả lời</span><strong id="answeredCount">0</strong></article>
+        <article class="stat-card"><span>Thời gian</span><strong id="adminTimer">—</strong></article>
+      </section>
+
+      <section class="panel control-panel">
+        <div>
+          <p class="eyebrow">ĐIỀU KHIỂN TRÒ CHƠI</p>
+          <h2 id="controlTitle">Sẵn sàng bắt đầu</h2>
+          <p id="controlHint" class="muted">Người chơi có thể đăng ký trước khi bắt đầu vòng 1.</p>
+        </div>
+        <div class="button-row">
+          <button id="startButton" class="button primary">Bắt đầu vòng 1</button>
+          <button id="nextButton" class="button primary" disabled>Chuyển vòng tiếp theo</button>
+          <button id="resetButton" class="button danger">Đặt lại trò chơi</button>
+          <button id="logoutButton" class="button">Đăng xuất</button>
+        </div>
+        <p id="actionMessage" class="message" role="status"></p>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">NGƯỜI CHƠI</p><h2>Danh sách tham gia</h2></div>
+          <span id="playerTotal" class="muted">0 người</span>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>STT</th><th>Họ tên</th><th>Lớp / đơn vị</th><th>Trạng thái</th><th>Bị loại ở vòng</th></tr></thead>
+            <tbody id="playersTable"><tr><td colspan="5" class="muted">Chưa có người chơi.</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">KẾT QUẢ</p><h2>Kết quả vòng gần nhất</h2></div>
+        </div>
+        <div id="roundResult" class="muted">Chưa có kết quả.</div>
+      </section>
+
+      <section id="championPanel" class="panel champion hidden">
+        <p class="eyebrow">AI CHALLENGE CHAMPION</p>
+        <h2>🏆 QUÁN QUÂN</h2>
+        <strong id="championName" class="champion-name"></strong>
+      </section>
+    </div>
+
+    <footer><span>AI CHALLENGE · ADMIN</span><span id="connectionState">Đang kết nối...</span></footer>
+  </main>
+</body>
+</html>
